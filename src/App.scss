@@ -1,0 +1,33 @@
+.App {
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  .content{
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+    div{
+      height: 180px;
+      line-height: 180px;
+      font-size: 32px;
+      vertical-align: middle;
+      text-align: center;
+      width: 25%;
+      color: #fff;
+      cursor: pointer;
+    }
+    div:nth-child(1) {
+      background: #f6bd8d;
+    }
+    div:nth-child(2) {
+      background: #b3d7bb;
+    }
+    div:nth-child(3) {
+      background: #63b2d9;
+    }
+    div:nth-child(4) {
+      background: #db8092;
+    }
+  }
+}
