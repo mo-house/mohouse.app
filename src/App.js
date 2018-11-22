@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <img src="./assets/images/banner.jpg" alt=""/>
+        Hello Mohouse.
       </div>
     );
   }
