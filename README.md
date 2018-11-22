@@ -1,10 +1,18 @@
-# mo-house
+# Mohouse
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Quick Start
+
+`git clone > npm install > npm start`
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Install dependencies.
 
 ### `npm start`
 
