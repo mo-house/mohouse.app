@@ -1,33 +1,153 @@
-.App {
-  img{
-    width: 100%;
-    height: 100%;
+.app {
+  &__banner{
+    background: #a73836;
+    img{
+      display: block;
+      width: 400px;
+      margin: 0 auto;
+    }
   }
-  .content{
-    width: 100%;
-    display: flex;
-    align-content: space-between;
-    div{
-      height: 180px;
-      line-height: 180px;
+  &__introduce{
+    p{
+      width: 800px;
+      margin: 40px 100px;
       font-size: 32px;
-      vertical-align: middle;
-      text-align: center;
-      width: 25%;
-      color: #fff;
-      cursor: pointer;
-    }
-    div:nth-child(1) {
-      background: #f6bd8d;
-    }
-    div:nth-child(2) {
-      background: #b3d7bb;
-    }
-    div:nth-child(3) {
-      background: #63b2d9;
-    }
-    div:nth-child(4) {
-      background: #db8092;
+      line-height: 44px;
     }
   }
+
+  &__musicList{
+    width: 100%;
+    margin: 30px auto 0;
+    border-bottom: 1px solid #EDEDED;
+    &-item{
+      display: flex;
+      height: 100px;
+      border-top: 1px solid #EDEDED;
+      &__name{
+        font-size: 36px;
+        line-height: 100px;
+        flex-basis: 400px;
+        text-align: right;
+        padding-right: 40px;
+        border-right: 1px solid #EDEDED;
+      }
+      &__content{
+        padding-left: 40px;
+        flex-basis: 700px;
+      }
+    }
+    
+  }
+
+  &__partnerList{
+    display: flex;
+    width: 1200px;
+    margin: 30px auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-item{
+      width: 300px;
+      height: 300px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 12px 0 rgba(0,0,0,0.15);
+      img{
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 20px auto;
+        border-radius: 50px;
+      }
+      &__intro{
+        &-name{
+          color: #333;
+          text-align: center;
+          padding: 0 10px;
+        }
+        &-content{
+          padding: 0 20px;
+          font-size: 14px;
+          line-height: 30px;
+          color: #999;
+        }
+      }
+      &:hover &__musicList{
+        display: block;
+      }
+      &:hover &__intro{
+        display: none;
+      }
+      &__musicList{
+        display: none;
+        padding: 40px 20px;
+        li{
+          font-size: 14px;
+          line-height: 30px;
+          color: #666;
+        }
+      }
+    }
+  }
+  &__planList{
+    width: 100%;
+    margin: 30px auto 0;
+    border-bottom: 1px solid #EDEDED;
+    &-item{
+      display: flex;
+      height: 100px;
+      border-top: 1px solid #EDEDED;
+      &__name{
+        font-size: 36px;
+        line-height: 100px;
+        flex-basis: 400px;
+        text-align: right;
+        padding-right: 40px;
+        border-right: 1px solid #EDEDED;
+      }
+      &__content{
+        padding-left: 40px;
+        flex-basis: 700px;
+      }
+    }
+    
+  }
+  &__timeLine{
+    margin: 30px auto 0;
+    width: 1200px;
+    display: flex;
+    border-top: 1px solid #EDEDED;
+    padding-top: 30px;
+    &-left{
+      width: 550px;
+      text-align: right;
+    }
+    &-mid{
+      width: 100px;
+      &__line{
+        width: 1px;
+        height: 110%;
+        margin: -30px auto;
+        background: #EDEDED;
+      }
+    }
+    &-right{
+      width: 550px;
+      text-align: left;
+    }
+    &-item{
+      width: 550px;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #EDEDED;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      box-shadow: 0 1px 12px 0 rgba(0,0,0,0.15);
+      font-size: 14px;
+      line-height: 30px;
+      color: #666;
+    }
+  }
+
 }
